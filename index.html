@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./libs/gsap.min.js" defer></script>
+    <script src="./libs/ScrollTrigger.min.js" defer></script>
+    <script src="./libs/ScrollSmoother.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Meta</title>
+</head>
+<body>
+
+<div class="wrapper">
+        <div class="content">
+            <header>
+                <div class="nav">
+                    <img src="./images/logo.png" class="logo">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#!">Wave NFTs</a></li>
+                        <li class="nav__item"><a href="#!">Stories</a></li>
+                        <li class="nav__item"><a href="#!">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <a href="#!" target="_blank"><img src="./images/twitter.png" class="social__item"></a>
+                    <a href="#!" target="_blank"><img src="./images/discord.png" class="social__item"></a>
+                    <a href="#!" target="_blank"><img src="./images/youtube.png" class="social__item"></a>
+                    <a href="#!" target="_blank"><img src="./images/telegram.png" class="social__item"></a>
+                </div>
+            </header>
+        
+            <main>
+                <section class="hero">
+                    <div class="hero__info">
+                        <div class="hero__text">
+                            <h2>META RECORD LABEl</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                        <button class="hero__button">Learn more</button>
+                    </div>
+                    <div class="gallery">
+                        <div class="gallery-container">
+                            <img src="./images/blue-wave.png" class="gallery-item gallery-item-1" data-index="1">
+                            <img src="./images/red-wave.png" class="gallery-item gallery-item-2" data-index="2">
+                            <img src="./images/purple-wave.png" class="gallery-item gallery-item-3" data-index="3">
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="info">
+                    <div class="info__left">
+                        <h3>wave NFT <span>COLLECTION of 777</span></h3>
+                        <img src="./images/blue-wave.png" class="info__img">
+                    </div>
+                    <div class="info__right">
+                        <p class="info__green" id="typed-text"></p>
+                        <p class="info__text">Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet dictum sit amet justo. Tortor aliquam nulla facilisi cras.</p>
+                        <p class="info__text">Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed felis. Aenean vel elit scelerisque mauris pellentesque pulvinar. Et malesuada fames ac turpis egestas sed tempus. Enim sit amet venenatis urna cursus eget.</p>
+                        <p class="info__text">Maecenas ultricies mi eget mauris pharetra et ultrices. A condimentum vitae sapien pellentesque habitant morbi.</p>
+                        <button class="info__button">Get one on OpenSea</button>
+                    </div>
+                </section>
+        
+                <section class="artists">
+                    <div class="run-line">
+                        <div class="run-line__text"><p>artists</p><p>artists</p></div>
+                        <div class="run-line__text" style="animation-delay: 5s; transform: translateX(-100%);"><p>artists</p><p>artists</p></div>
+                    </div>
+                    <div class="artists__gallery">
+                        <div class="artists__item">
+                            <img src="./images/art-1.png">
+                            <p>Mark Popson</p>
+                        </div>
+                        <div class="artists__item">
+                            <img src="./images/art-2.png">
+                            <p>Pete Bentz</p>
+                        </div>
+                        <div class="artists__item">
+                            <img src="./images/art-3.png">
+                            <p>Daniela Youth</p>
+                        </div>
+                        <div class="artists__item">
+                            <img src="./images/art-4.png">
+                            <p>Roman Gore</p>
+                        </div>
+                        <div class="artists__item">
+                            <img src="./images/art-5.png">
+                            <p>Tonya</p>
+                        </div>
+                        <div class="artists__item">
+                            <img src="./images/art-6.png">
+                            <p>Ivor</p>
+                        </div>
+                        <div class="artists__item">
+                            <img src="./images/art-7.png">
+                            <p>Somae Petit</p>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="story">
+                    <h3>mrl.<span>the story.</span></h3>
+                    <div class="story__container">
+                        <div class="story__buttons">
+                            <input class="story__button" id="button-1" type="button" value="Our founders" onmousedown="viewDiv1()">
+                            <input class="story__button" id="button-2" type="button" value="Partners" onmousedown="viewDiv2()">
+                            <input class="story__button" id="button-3" type="button" value="The future" onmousedown="viewDiv3()">
+                        </div>
+                        <div class="story__content" id="story-1">
+                            <img src="./images/story.png">
+                            <div class="story__content__text">
+                                <p class="story__green">META record label was founded by Shaky Lake and Baky Hike in 2020 business accelerator.</p>
+                                <p class="story__text">Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet dictum sit amet justo. Tortor aliquam nulla facilisi cras.</p>
+                                <p class="story__text">Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed felis. Aenean vel elit scelerisque mauris pellentesque pulvinar. Et malesuada fames ac turpis egestas sed tempus. Enim sit amet venenatis urna cursus eget.</p>
+                                <p class="story__text">Maecenas ultricies mi eget mauris pharetra et ultrices. A condimentum vitae sapien pellentesque habitant morbi.</p>
+                            </div>
+                        </div>
+                        <div class="story__content" id="story-2">
+                            <img src="./images/red-wave.png">
+                            <div class="story__content__text">
+                                <p class="story__green">META record label was founded by Shaky Lake and Baky Hike in 2020 business accelerator.</p>
+                                <p class="story__text">Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet dictum sit amet justo. Tortor aliquam nulla facilisi cras.</p>
+                                <p class="story__text">Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed felis. Aenean vel elit scelerisque mauris pellentesque pulvinar. Et malesuada fames ac turpis egestas sed tempus. Enim sit amet venenatis urna cursus eget.</p>
+                                <p class="story__text">Maecenas ultricies mi eget mauris pharetra et ultrices. A condimentum vitae sapien pellentesque habitant morbi.</p>
+                            </div>
+                        </div>
+                        <div class="story__content" id="story-3">
+                            <img src="./images/blue-wave.png">
+                            <div class="story__content__text">
+                                <p class="story__green">META record label was founded by Shaky Lake and Baky Hike in 2020 business accelerator.</p>
+                                <p class="story__text">Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet dictum sit amet justo. Tortor aliquam nulla facilisi cras.</p>
+                                <p class="story__text">Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed felis. Aenean vel elit scelerisque mauris pellentesque pulvinar. Et malesuada fames ac turpis egestas sed tempus. Enim sit amet venenatis urna cursus eget.</p>
+                                <p class="story__text">Maecenas ultricies mi eget mauris pharetra et ultrices. A condimentum vitae sapien pellentesque habitant morbi.</p>
+                            </div>
+                    </div>
+                    </div>
+                </section>
+        
+                <section class="guitar">
+                    <img src="./images/guitar.png">
+                </section>
+        
+                <section class="roadmap">
+                    <div class="anim1"></div>
+                    <div class="anim2"></div>
+                    <div class="anim3"></div>
+                    <div class="roadmap__container">
+                        <h3>roadmap</h3>
+                        <div class="roadmap__block">
+                            <div class="roadmap__block__header">
+                                <p class="number" id="green__background">1</p>
+                                <div class="roadmap__header__text">
+                                    <p>Phase 1 - completed</p>
+                                    <h5>Spring 2022 - pre launch</h5>
+                                </div>
+                            </div>
+                            <div class="roadmap__block__content">
+                                <div class="roadmap__content__text">
+                                    <p class="spans"><span>Website 1.2</span><span>Discord community promotion</span><span>MINTING WAVE NFTs</span></p>
+                                    <p>WAVE NFTs will be 100% pre-minted and launched as an OpenOcean collection</p>
+                                </div>
+                                <img src="./images/red-wave.png">
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="roadmap__block">
+                            <div class="roadmap__block__header">
+                                <p class="number">2</p>
+                                <div class="roadmap__header__text">
+                                    <p>Phase 2</p>
+                                    <h5>Summer 2022 - GROWTH</h5>
+                                </div>
+                            </div>
+                            <div class="roadmap__block__content">
+                                <div class="roadmap__content__text">
+                                    <p class="spans"><span>Hiring for 10 positions in</span><span>Partnerships with main Metaverse players</span><span>Partnerships with WEB 2.0 music destribution channels</span></p>
+                                    <p>Onboarding 100 new artists</p>
+                                    <p>META Record Labels is holding the first screening of aspiring artists from the list of WAVE NFT holders</p>
+                                </div>
+                                <img src="./images/blue-wave.png">
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="roadmap__block">
+                            <div class="roadmap__block__header">
+                                <p class="number">3</p>
+                                <div class="roadmap__header__text">
+                                    <p>Phase 3</p>
+                                    <h5>Summer 2022 - YOuR new stage</h5>
+                                </div>
+                            </div>
+                            <div class="roadmap__block__content">
+                                <div class="roadmap__content__text">
+                                    <p class="spans"><span>Onboarding new partners</span><span>First live concert in Sandjar</span><span>Live concert in Decentrafield</span></p>
+                                    <p>We secured dates for out artists to peform in front of the live audience of Metaverse. Check the concert schedule in our</p>
+                                </div>
+                                <img src="./images/purple-wave.png">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="logoholder">
+                    <div class="run-line r-logoholder">
+                        <div class="run-line__text t-logoholder"><p>logoholder</p><p>logoholder</p></div>
+                        <div class="run-line__text t-logoholder" style="animation-delay: 5s; transform: translateX(-100%);"><p>logoholder</p><p>logoholder</p></div>
+                    </div>
+                    <div class="run-line r-logoholder">
+                        <div class="run-line__text t-logoholder" style="animation-delay: 1.2s; transform: translateX(-100%);"><p>logoholder</p><p>logoholder</p></div>
+                        <div class="run-line__text t-logoholder" style="animation-delay: 6.2s; transform: translateX(-100%);"><p>logoholder</p><p>logoholder</p></div>
+                    </div>
+                </section>
+        
+                <section class="questions">
+                    <div class="questions__left">
+                        <h3>Frequently <span>asked</span> questions</h3>
+                        <img src="./images/red-wave.png">
+                    </div>
+                    <div class="questions__right">
+                        <div class="question">
+                            <h5>How can I get into Meta RL?</h5>
+                            <div class="q-button"><input class="questions__button" id="mark-1" type="button" onmousedown="viewDiv4()"></div>
+                        </div>
+                        <div class="answer" id="answer-1">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                        </div>
+                        <div class="question">
+                            <h5>When is the NFT launch?</h5>
+                            <div class="q-button"><input class="questions__button" id="mark-2" type="button" onmousedown="viewDiv5()"></div>
+                        </div>
+                        <div class="answer" id="answer-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                        </div>
+                        <div class="question">
+                            <h5>Where can I get a WAVE NFT?</h5>
+                            <div class="q-button"><input class="questions__button" id="mark-3" type="button" onmousedown="viewDiv6()"></div>
+                        </div>
+                        <div class="answer" id="answer-3">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="team">
+                    <div class="run-line">
+                        <div class="run-line__text"><p>team</p><p>team</p><p>team</p></div>
+                        <div class="run-line__text" style="animation-delay: 5s; transform: translateX(-100%);"><p>team</p><p>team</p><p>team</p></div>
+                    </div>
+                    <div class="team__container">
+                        <div class="team__block">
+                            <img src="./images/team1.png">
+                            <h5>Shaky Lake</h5>
+                            <p class="team__green">Founder</p>
+                            <div class="team__socials">
+                                <img class="social__item" src="./images/twitter.png">
+                                <img class="social__item" src="./images/in.png">
+                            </div>
+                            <p class="team__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                        <div class="team__block">
+                            <img src="./images/team2.png">
+                            <h5>Baky Hike</h5>
+                            <p class="team__green">Co-founder</p>
+                            <div class="team__socials">
+                                <img class="social__item" src="./images/twitter.png">
+                                <img class="social__item" src="./images/in.png">
+                            </div>
+                            <p class="team__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                        <div class="team__block">
+                            <img src="./images/team3.png">
+                            <h5>Vania Do</h5>
+                            <p class="team__green">Producer</p>
+                            <div class="team__socials">
+                                <img class="social__item" src="./images/twitter.png">
+                                <img class="social__item" src="./images/in.png">
+                            </div>
+                            <p class="team__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="discord">
+                    <div class="discord__left">
+                        <h3>Join our <span>Discord</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        <button><img src="./images/discord.png">Join Discord</button>
+                    </div>
+                    <img class="discord__img" src="./images/purple-wave.png">
+                </section>
+            </main>
+        
+            <footer>
+                <div class="footer__name">
+                    <img src="./images/logo.png">
+                    <p>©2022 All rights reserved</p>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#!">Wave NFTs</a></li>
+                    <li class="footer__item"><a href="#!">Stories</a></li>
+                    <li class="footer__item"><a href="#!">Contact</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#!">Licencing</a></li>
+                    <li class="footer__item"><a href="#!">Style Guide</a></li>
+                    <li class="footer__item"><a href="#!">Changelog</a></li>
+                </ul>
+                <div class="footer__creators">
+                    <p>Powered by Webflow</p>
+                    <p>Developed by Anastasiia G.</p>
+                </div>
+                <div class="social">
+                    <a href="#!" target="_blank"><img src="./images/twitter.png" class="social__item"></a>
+                    <a href="#!" target="_blank"><img src="./images/discord.png" class="social__item"></a>
+                    <a href="#!" target="_blank"><img src="./images/youtube.png" class="social__item"></a>
+                    <a href="#!" target="_blank"><img src="./images/telegram.png" class="social__item"></a>
+                </div>
+            </footer>
+        </div>
+</div>
+    
+</body>
+</html>
