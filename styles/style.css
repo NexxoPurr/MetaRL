@@ -64,6 +64,7 @@ header {
     align-items: center;
     justify-content: space-around;
     margin: calc(var(--index));
+    gap: calc(var(--index));
 }
 
 .nav {
@@ -88,12 +89,19 @@ header {
     font-size: calc(var(--index) * .9);
 }
 
+.social,
+.social__div {
+    display: flex;
+    gap: calc(var(--index));
+    flex-wrap: nowrap;
+}
+
 .social__item {
     cursor: pointer;
     background-color: #ffffff;
     padding: calc(var(--index) * .3);
     transition-duration: .7s;
-    width: calc(var(--index) * 1.8);
+    width: calc(var(--index) * 1.5);
 }
 
 .social__item:hover {
@@ -221,7 +229,7 @@ header {
     font-size: calc(var(--index) * 2);
     text-transform: uppercase;
     font-family: Audiowide-m, sans-serif;
-    line-height: 7vh;
+    line-height: calc(var(--index) * 3);
 }
 
 .info__left span {
@@ -301,6 +309,7 @@ header {
 .artists__gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: calc(var(--index) * 2.5);
     margin: 0 3vw;
 }
@@ -367,10 +376,19 @@ header {
 
 .story__content {
     display: flex;
+    flex-direction: column;
     width: calc(var(--index) * 40);
-    gap: 0 6vw;
-    padding: 5vh;
+    gap: calc(var(--index) * 2);
+    padding: calc(var(--index));
     background-color: var(--dark-gray-color);
+}
+
+.story__content__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: calc(var(--index) * 2);
 }
 
 #story-1 {
@@ -383,8 +401,8 @@ header {
 }
 
 .story__content img {
-    width: calc(var(--index) * 12);
-    height: calc(var(--index) * 15);
+    width: calc(var(--index) * 10);
+    height: calc(var(--index) * 10);
 }
 
 .guitar {
@@ -589,11 +607,12 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: calc(var(--index) * 2);
 }
 
 .questions__left h3 {
     font-family: Audiowide-m, sans-serif;
-    font-size: calc(var(--index) * 2);
+    font-size: calc(var(--index) * 1.7);
     text-transform: uppercase;
     width: min-content;
 }
@@ -603,8 +622,8 @@ header {
 }
 
 .questions__left img {
-    width: calc(var(--index) * 20);
-    height: calc(var(--index) * 20);
+    width: calc(var(--index) * 15);
+    height: calc(var(--index) * 15);
 }
 
 .questions__right {
@@ -765,8 +784,8 @@ header {
 }
 
 .discord__img {
-    width: calc(var(--index) * 25);
-    height: calc(var(--index) * 25);
+    width: calc(var(--index) * 20);
+    height: calc(var(--index) * 20);
 }
 
 footer {
